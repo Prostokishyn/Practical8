@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Деталі проекту</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>{{ project_num }}</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Головна</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="project-details">
+            <h2>{{ project_name }}</h2>
+            <img src="{{ image }}" alt="{{ project_name }}" id="project-image">
+            <p>{{ project_info }}</p>
+            <h3>Використані технології: </h3>
+            <p>{{ project_tech }}</p>
+            <a href="{{ link }}" class="btn">Посилання на репозиторій</a>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Портфоліо. Простокішин Діма.</p>
+    </footer>
+</body>
+</html>
